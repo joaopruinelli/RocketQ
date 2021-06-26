@@ -30,7 +30,7 @@ function handleClick(event, check=true){
     const questionId = event.target.dataset.id //dataset.id get the data-id method number from the HTML
 
     const form = document.querySelector('.modal form')
-    form.setAttribute('action', `question/${roomId}/${questionId}/${slug}`)
+    form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`)
 
 
     modalTitle.innerHTML = `${text} esta pergunta`
